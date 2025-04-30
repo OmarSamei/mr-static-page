@@ -3,101 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <title>مشروع كلية العلاج الطبيعي</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     body {
       margin: 0;
       padding: 0;
-      background: linear-gradient(to bottom right, #005c97, #363795); /* تدرج أزرق غامق */
-      font-family: 'Cairo', sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      font-family: 'Cairo', 'Arial', sans-serif;
+      background: linear-gradient(to bottom right, #005c97, #b1d4e0);
+      color: #ffffff;
+      text-align: center;
       min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .container {
-      background: #ffffffee;
-      border-radius: 20px;
-      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
-      padding: 30px 20px;
-      max-width: 900px;
       width: 95%;
-      text-align: center;
+      max-width: 900px;
+      padding: 20px;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
     }
 
     .logo {
-      width: 120px;
-      margin-bottom: 15px;
+      width: 100px;
+      margin-bottom: 10px;
     }
 
     h1 {
-      font-size: 30px;
-      color: #003366;
-      margin: 10px 0 30px;
+      font-size: 28px;
+      margin-bottom: 20px;
     }
 
     video {
       width: 100%;
+      max-width: 100%;
       border-radius: 15px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
       margin-bottom: 20px;
     }
 
     .buttons {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      justify-content: space-between;
       gap: 15px;
-      margin-bottom: 25px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
     }
 
-    .button {
-      padding: 10px 20px;
-      font-size: 18px;
+    .download-btn {
+      flex: 1;
+      min-width: 130px;
+      background-color: #0c77f0;
+      color: #ffffff;
+      padding: 12px 20px;
       border-radius: 30px;
       text-decoration: none;
-      color: white;
-      background-color: #0d47a1;
-      transition: background-color 0.3s;
+      font-size: 18px;
+      transition: 0.3s ease;
     }
 
-    .button:hover {
-      background-color: #1565c0;
+    .download-btn:hover {
+      background-color: #d50000;
     }
 
     footer {
-      font-size: 15px;
-      color: #222;
-      text-align: right;
+      margin-top: 20px;
+      font-size: 16px;
       line-height: 1.8;
-    }
-
-    footer section {
-      margin-bottom: 15px;
-    }
-
-    .footer-title {
-      font-weight: bold;
-      color: #003366;
     }
 
     @media (max-width: 600px) {
       h1 {
-        font-size: 24px;
+        font-size: 22px;
       }
-
-      .button {
+      .buttons {
+        flex-direction: column;
+      }
+      .download-btn {
         font-size: 16px;
-        padding: 10px 15px;
-      }
-
-      footer {
-        text-align: center;
       }
     }
   </style>
@@ -107,7 +93,9 @@
   <div class="container">
     <img src="logo.png" alt="لوجو كلية العلاج الطبيعي" class="logo">
 
-    <h1>Practical application for active assisted ROM lower limb</h1>
+    <h1>
+      Practical application for active assisted ROM lower limb
+    </h1>
 
     <video controls>
       <source src="video.mp4" type="video/mp4">
@@ -115,35 +103,25 @@
     </video>
 
     <div class="buttons">
-      <a href="video.mp4" download class="button">تحميل الفيديو</a>
-      <a href="file.pdf" target="_blank" class="button">عرض الملف PDF</a>
+      <a href="video.mp4" download class="download-btn">تحميل الفيديو</a>
+      <a href="report.pdf" target="_blank" class="download-btn">فتح الملف PDF</a>
     </div>
 
     <footer>
-      <section>
-        <div class="footer-title">Under supervision of:</div>
-        Prof.Dr / Wael Shendy<br>
-        Dr. / Ramy Dawah<br>
-        Dr. / Nabil Hamid
-      </section>
+      <strong>Under supervision of:</strong><br>
+      Prof.Dr / Wael Shendy<br>
+      Dr. / Ramy Dawah<br>
+      Dr. / Nabil Hamid<br><br>
 
-      <section>
-        <div class="footer-title">Applicators:</div>
-        Abdulrahman Khalil<br>
-        Abdullah Beiet<br>
-        Abdulrahman Elsherbeny<br>
-        Abdulrahman Shehata
-      </section>
+      <strong>Applicators:</strong><br>
+      Abdulrahman Khalil, Abdullah Beiet,<br>
+      Abdulrahman Elsherbeny, Abdulrahman Shehata<br><br>
 
-      <section>
-        <div class="footer-title">Photographers:</div>
-        Zeyad Mahmoud<br>
-        Abdelfattah Elbadry
-      </section>
+      <strong>Photographers:</strong><br>
+      Zeyad Mahmoud, Abdelfattah Elbadry<br><br>
 
-      <section style="text-align: center; margin-top: 20px;">
-        <strong>Eng. Omar Sami</strong>
-      </section>
+      <strong>Developed by:</strong><br>
+      Eng. Omar Sami
     </footer>
   </div>
 
