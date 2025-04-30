@@ -22,24 +22,23 @@
       max-width: 900px;
       padding: 20px;
       margin: auto;
-      background-color: rgba(0, 0, 0, 0.4);
+      background-color: rgba(0, 0, 0, 0.3);
       border-radius: 20px;
       box-shadow: 0 0 20px rgba(0,0,0,0.3);
     }
 
     .logo {
-      width: 100px;
-      margin-bottom: 10px;
+      width: 120px;
+      margin-bottom: 15px;
     }
 
     h1 {
-      font-size: 28px;
+      font-size: 26px;
       margin-bottom: 20px;
     }
 
     video {
       width: 100%;
-      max-width: 100%;
       border-radius: 15px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
       margin-bottom: 20px;
@@ -55,13 +54,14 @@
 
     .download-btn {
       flex: 1;
-      min-width: 130px;
+      min-width: 150px;
       background-color: #0c77f0;
       color: #ffffff;
-      padding: 12px 20px;
+      padding: 14px 25px;
       border-radius: 30px;
       text-decoration: none;
       font-size: 18px;
+      font-weight: bold;
       transition: 0.3s ease;
     }
 
@@ -70,20 +70,33 @@
     }
 
     footer {
-      margin-top: 20px;
       font-size: 16px;
       line-height: 1.8;
+      margin-top: 30px;
     }
 
     @media (max-width: 600px) {
       h1 {
         font-size: 22px;
       }
+
+      .logo {
+        width: 150px;
+      }
+
       .buttons {
         flex-direction: column;
       }
+
       .download-btn {
-        font-size: 16px;
+        width: 100%;
+        font-size: 17px;
+        padding: 15px;
+        margin-bottom: 10px;
+      }
+
+      footer {
+        font-size: 14px;
       }
     }
   </style>
